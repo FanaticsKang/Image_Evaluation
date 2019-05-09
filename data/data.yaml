@@ -1,0 +1,30 @@
+%YAML:1.0
+
+# Image Size
+Image.Cols: 720
+Image.Rows: 540
+
+# Camera calibration and distortion parameters (OpenCV) 
+Camera.K: !!opencv-matrix
+    rows: 3
+    cols: 3
+    dt: d
+    data: [ 429.843, 0.0, 346.997, 
+            0.0, 427.700, 289.041, 
+            0.0, 0.0, 1.0 ]
+
+Camera.Dist: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [-0.361369, 0.134596, 0., 0., -0.0234764]
+
+# Transformat from lidar to camera
+T_cl: !!opencv-matrix
+    rows: 4
+    cols: 4
+    dt: d
+    data: [4.79817e-05,   -0.999966,  0.00829732,    0.060588,
+            -0.0122663,  -0.0082972,    -0.99989,   -0.121796,
+              0.999925, -5.3823e-05,  -0.0122663,   -0.157652,
+                  0,             0,           0,           1]
