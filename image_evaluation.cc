@@ -33,6 +33,8 @@ int main(int argc, char** argv) {
   std::cout << "Camera distort paratmeter:\n"
             << camera_distort_param << std::endl;
   cv::Mat rows_map, cols_map;
-  CreateUndistortRectifyMap::Init(image_cols, image_rows, camera_internal_param,
-                                  camera_distort_param, &rows_map, &cols_map);
+  Undistort undistort(camera_internal_param, camera_distort_param,
+                      "/home/kang/bridge/");
+
+  undistort.InitRectifyMap(image_cols, image_rows, &cols_map, &rows_map);
 }
