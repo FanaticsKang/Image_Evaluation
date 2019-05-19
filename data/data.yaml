@@ -9,15 +9,15 @@ Camera.K: !!opencv-matrix
     rows: 3
     cols: 3
     dt: d
-    data: [ 429.843, 0.0, 346.997, 
-            0.0, 427.700, 289.041, 
-            0.0, 0.0, 1.0 ]
+    data: [ 437.8995, 0.0, 342.9241, 
+            0.0, 438.8216, 273.7163, 
+            0.0, 0.1, 1.0 ]
 
 Camera.Dist: !!opencv-matrix
    rows: 1
    cols: 5
    dt: d
-   data: [-0.361369, 0.134596, 0., 0., -0.0234764]
+   data: [-0.34329, 0.11431, 0., 0., -0.017375]
 
 # Transformat from lidar to camera
 T_cl: !!opencv-matrix

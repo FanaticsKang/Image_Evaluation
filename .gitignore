@@ -1,1 +1,10 @@
+# ignore build and bin
 build/
+bin/
+
+#ignore KDevelop
+.kdev4
+*.kdev4
+
+#vs code related
+.vscode/

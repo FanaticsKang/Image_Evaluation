@@ -8,7 +8,7 @@ cmake_minimum_required( VERSION 2.8 )
 project(ImageEvaluation)
 
 #set( CMAKE_BUILD_TYPE "Debug" )
-set( CMAKE_CXX_FLAGS "-std=c++17 -O2 -Wall -Werror" )
+set( CMAKE_CXX_FLAGS "-std=c++17 -O0 -Wall -g" )
 
 #ceres
 #find_package( Ceres REQUIRED )
